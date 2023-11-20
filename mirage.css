@@ -2,14 +2,14 @@
     --color-background: #F0F4F8;
     --color-foreground: #002e5b;
     --color-dark: #081e2c;
-    --color-light: #394867;
+    --color-md-dark: #394867;
     --color-md-light: #748CAB;
-    --color-md-dark: #95A3B3;
-    --color-primary: #F0544F;
-    --color-info: #70A288;
+    --color-light: #95A3B3;
+    --color-primary: #5B5F97;
+    --color-info: #757bc6;
     --color-success: #4F9D84;
-    --color-danger: #EE6352;
-    --color-callout: #5B5F97;
+    --color-danger: #F0544F;
+    --color-callout: #fde428;
     --color-lightest: #FFFFFF;
 }
 
@@ -92,32 +92,32 @@ h6 {
 }
 
 strong {
-    color: pink;
+    color: var(--color-info);
 }
 
 em {
     font-stretch: expanded;
+    color: var(--color-info);
 }
 
 a {
-    color: rgba(179, 251, 229, 255);
+    color: var(--color-callout);
     text-decoration: none;
 }
 
 abbr {
-    color: rgba(195, 77, 38, 255);
+    color: var(--color-info);
     text-decoration: none;
 }
 
 code {
-    color: white;
+    color: var(--color-lightest);
 }
 
 button {
     background-color: var(--color-md-light);
     border-radius: 100px;
-    box-shadow: rgba(242, 240, 243, 0.2) 0 -25px 18px -14px inset, rgba(80, 44, 187, 0.15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
-    color: white;
+    color: var(--color-lightest);
     cursor: pointer;
     display: inline-block;
     padding: 7px 20px;
@@ -125,12 +125,11 @@ button {
     text-decoration: none;
     transition: all 250ms;
     border: 0;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 button:hover {
-    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
-    transform: scale(1.05) rotate(-1deg);
+    transform: scale(1.05);
 }
 
 pre,
@@ -156,7 +155,7 @@ textarea {
     box-sizing: border-box;
     margin-top: 5px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-md-dark);
     border-radius: 4px;
 }
 
@@ -164,8 +163,8 @@ textarea {
 .switch-2 {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 40px;
+    height: 24px;
 }
 
 .switch-2 input {
@@ -179,16 +178,16 @@ textarea {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: gray;
+    background-color: var(--color-md-dark);
     transition: .4s;
-    border-radius: 34px;
+    border-radius: 24px;
 }
 
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 16px;
+    width: 16px;
     left: 4px;
     bottom: 4px;
     background-color: white;
@@ -197,11 +196,11 @@ textarea {
 }
 
 input:checked+.slider {
-    background-color: green;
+    background-color: var(--color-success);
 }
 
 input:checked+.slider:before {
-    transform: translateX(26px);
+    transform: translateX(16px);
 }
 
 .control-checkbox {
@@ -223,13 +222,13 @@ input:checked+.slider:before {
     left: 0;
     height: 25px;
     width: 25px;
-    background-color: #eee;
-    border: 1px solid #ccc;
+    background-color: var(--color-lightest);
+    border: 1px solid var(--color-lightest);
 }
 
 .control-checkbox input:checked+span {
-    background-color: #4caf50;
-    border: 1px solid #4caf50;
+    background-color: var(--color-success);
+    border: 1px solid var(--color-success);
 }
 
 .control-checkbox span:after {
