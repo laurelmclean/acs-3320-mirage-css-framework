@@ -22,5 +22,4 @@ To use Mirage in your project, simply download the `mirage.css` file and link it
 <link rel="stylesheet" href="path/to/mirage.css">
 ```
 
-Feel free to explore and leverage Mirage's opinionated styles for a consistent and professional appearance across your web pages.
-
+![screenshot](screenshot.png)

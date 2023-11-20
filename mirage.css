@@ -29,6 +29,10 @@ body {
 body.dark {
     background-color: var(--color-foreground);
     color: var(--color-lightest);
+
+    & a {
+        color: var(--color-callout);
+    }
 } 
 
 div[class="container main"] {
@@ -87,7 +91,7 @@ h6 {
 
 .navbar ul li a:hover {
     background-color: var(--color-foreground);
-    color: #fde428;
+    color: var(--color-callout);
     transition: all 0.5s ease 0s;
 }
 
@@ -101,7 +105,7 @@ em {
 }
 
 a {
-    color: var(--color-callout);
+    color: var(--color-md-dark);
     text-decoration: none;
 }
 
@@ -246,7 +250,7 @@ input:checked+.slider:before {
     top: 6px;
     width: 5px;
     height: 10px;
-    border: solid #fff;
+    border: solid var(--color-lightest);
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
 }
@@ -264,9 +268,9 @@ input:checked+.slider:before {
 }
 
 .page-footer a {
-    color: var(--color-foreground)
+    color: var(--color-foreground) !important;
 }
 
 .page-footer a:hover {
-    color: #fde428;
+    color: var(--color-callout);
 }
